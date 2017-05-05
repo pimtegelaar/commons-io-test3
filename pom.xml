@@ -324,6 +324,23 @@ file comparators, endian transformation classes, and much more.
           </excludes>
         </configuration>
       </plugin>
+
+      <plugin>
+        <groupId>org.pitest</groupId>
+        <artifactId>pitest-maven</artifactId>
+        <version>1.1.10</version>
+        <configuration>
+                <reportsDirectory>${project.build.directory}/../../pitreports-commons-io-changes</reportsDirectory>
+          <targetClasses>
+            <param>org.apache.commons.io*</param>
+          </targetClasses>
+          <targetTests>
+            <param>org.apache.commons.io*</param>
+          </targetTests>
+          <verbose>true</verbose>
+          <failWhenNoMutations>false</failWhenNoMutations>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
