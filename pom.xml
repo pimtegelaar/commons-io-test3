@@ -319,7 +319,7 @@ file comparators, endian transformation classes, and much more.
           </ignorePathsToDelete>
         </configuration>
       </plugin>
-<<<<<<< HEAD
+
       <!-- Configure RAT for CLI invocation: mvn apache-rat:rat -->
       <plugin>
         <groupId>org.apache.rat</groupId>
@@ -348,8 +348,7 @@ file comparators, endian transformation classes, and much more.
           <failWhenNoMutations>false</failWhenNoMutations>
         </configuration>
       </plugin>
-=======
->>>>>>> 8b9fe1b01ce21003f6a6ff8391ad2a64f4d21030
+
     </plugins>
   </build>
 
